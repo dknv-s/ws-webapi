@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./libs/highlight.js/styles/github.css" />
+        <script src="./libs/highlight.js/highlight.pack.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="api">
+            <h1 class="api__h1">Список API</h1>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-title">
+                        <h2 class="api__h2">
+                            <span class="api__h2-num">1</span>. Organizations
+                        </h2>
+                    </div>
+                    <div class="collapsible-body collapsed">
+                        <div class="api__item">
+                            <h3 class="api__h3">
+                                URL:
+                                <a href="#" class="api__url"
+                                    >http://127.0.0.1/ws_default/api/orgs</a
+                                >
+                            </h3>
+
+                            <h3 class="api__h3">Параметры запроса:</h3>
+                            <table
+                                class="api__table api__table--request-params"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th>Параметр</th>
+                                        <th>Тип</th>
+                                        <th>Группа</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>orgCode</td>
+                                        <td>string</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="api__h3">Параметры ответа:</h3>
+                            <table
+                                class="api__table api__table--response-description"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th>Параметр</th>
+                                        <th>Тип</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>userId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>orgCode</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userObjId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userName</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userEmail</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userPhone</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>emailCopy</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="api__h3">Образец ответа:</h3>
+                            <pre
+                                class="api__response-sample"
+                            ><code class="json">{"1":{"userId":1,"orgCode":"intas","userObjId":44632,"userName":"Администратор","userEmail":"","userPhone":"","emailCopy":""},"2":{"userId":2,"orgCode":"intas","userObjId":95703,"userName":"Калинин Д.С.","userEmail":"dkalinin@intas-company.com","userPhone":"","emailCopy":""},"3":{"userId":3,"orgCode":"intas","userObjId":97700,"userName":"Исмагилов Д.В.","userEmail":"dismagilov@intas-company.com","userPhone":"","emailCopy":""},"4":{"userId":4,"orgCode":"intas","userObjId":101724,"userName":"Пупышев А.С.","userEmail":"apupyshev@intas-company.com","userPhone":"","emailCopy":""},"5":{"userId":5,"orgCode":"intas","userObjId":116545,"userName":"Насыров Р.Р.","userEmail":"rnasyrov@intas-company.com","userPhone":"","emailCopy":""}}</code></pre>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-title">
+                        <h2 class="api__h2">
+                            <span class="api__h2-num">1</span>. Organizations
+                        </h2>
+                    </div>
+                    <div class="collapsible-body collapsed">
+                        <div class="api__item">
+                            <h3 class="api__h3">URL:</h3>
+                            <p class="api__url">
+                                http://127.0.0.1/ws_default/api/orgs
+                            </p>
+                            <h3 class="api__h3">Параметры запроса:</h3>
+                            <table
+                                class="api__table api__table--request-params"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th>Параметр</th>
+                                        <th>Тип</th>
+                                        <th>Описание</th>
+                                        <th>Группировка</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>orgCode</td>
+                                        <td>string</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="api__h3">Образец ответа:</h3>
+                            <pre
+                                class="api__response-sample"
+                            ><code class="json">{"1":{"userId":1,"orgCode":"intas","userObjId":44632,"userName":"Администратор","userEmail":"","userPhone":"","emailCopy":""},"2":{"userId":2,"orgCode":"intas","userObjId":95703,"userName":"Калинин Д.С.","userEmail":"dkalinin@intas-company.com","userPhone":"","emailCopy":""},"3":{"userId":3,"orgCode":"intas","userObjId":97700,"userName":"Исмагилов Д.В.","userEmail":"dismagilov@intas-company.com","userPhone":"","emailCopy":""},"4":{"userId":4,"orgCode":"intas","userObjId":101724,"userName":"Пупышев А.С.","userEmail":"apupyshev@intas-company.com","userPhone":"","emailCopy":""},"5":{"userId":5,"orgCode":"intas","userObjId":116545,"userName":"Насыров Р.Р.","userEmail":"rnasyrov@intas-company.com","userPhone":"","emailCopy":""}}</code></pre>
+                            <h3 class="api__h3">Параметры ответа:</h3>
+                            <table
+                                class="api__table api__table--response-description"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th>Параметр</th>
+                                        <th>Тип</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>userId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>orgCode</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userObjId</td>
+                                        <td>int</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userName</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userEmail</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>userPhone</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>emailCopy</td>
+                                        <td>string</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <script>
+            document
+                .querySelectorAll('.api__response-sample code')
+                .forEach(function(block) {
+                    var obj = JSON.parse(block.textContent);
+                    block.textContent = JSON.stringify(obj, null, '    ');
+                });
+            document
+                .querySelectorAll('.collapsible .collapsible-title')
+                .forEach(title => {
+                    title.addEventListener('click', function() {
+                        var content = this.nextElementSibling;
+                        content.classList.toggle('collapsed');
+                    });
+                });
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
